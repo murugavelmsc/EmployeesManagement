@@ -21,9 +21,12 @@ namespace EmployeesManagement.Models
         public int LeaveTypeId { get; set; }
         public LeaveType LeaveType { get; set; }
         public string? Attachment { get; set; }
+        [Display(Name = "Notes")]
         public string? Description { get; set; }
         [Display(Name = "Status")]
         public int StatusId { get; set; }
         public SystemCodeDetail Status { get; set; }
+        [Display(Name = "Approval / Reject Notes")]
+        public string? ApprovalNotes { get; set; }
     }
 }
